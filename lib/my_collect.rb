@@ -6,7 +6,6 @@ def my_collect(lang)
     return []
   else
     yield lang[x]
-    x = x.upcase
   end
   lang
 end
