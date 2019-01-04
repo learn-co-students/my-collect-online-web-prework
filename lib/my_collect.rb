@@ -5,12 +5,13 @@ def my_collect(lang)
   if lang.length == 0
     return []
   else
-    yield lang
+    yield lang[x]
+    x = x.upcase
   end
   lang
 end
 
 
 my_collect(lang) do |x|
-  x.upcase
+  "#{x}".upcase
 end
