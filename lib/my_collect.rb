@@ -6,11 +6,11 @@ def my_collect(lang2)
   x = 0
 
   while x < lang2.size
-    yield lang2[x]
+    yield lang2(x)
 
     x += 1
   end
-
+puts lang2
   return lang2
 
 end
