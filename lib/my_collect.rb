@@ -1,17 +1,15 @@
 lang = ['ruby', 'javascript', 'python', 'objective-c']
-beep = [1, 2, 3]
-hat = ["beekkkkk"]
 
-def my_collect(lang2)
+def my_collect(lang)
   x = 0
 
-  while x < lang2.size
-    yield lang2(x)
+  while x < lang.length
+    yield [lang]
 
-    x += 1
+    x = x + 1
   end
-puts lang2
-  return lang2
+
+ lang2
 
 end
 
