@@ -2,9 +2,10 @@ lang = ['ruby', 'javascript', 'python', 'objective-c']
 
 def my_collect(lang)
   x = 0
+  new_array = []
 
   while x < lang.size
-    new_array << yield lang[x]
+    new_array << yield(lang[x])
 
     x = x + 1
   end
