@@ -1,12 +1,9 @@
 def my_collect(array)
   i = 0
+  ary = []
   while i < array.length
-    yield array.join(",").upcase.split(",")
-    i += 1
+    ary << yield(array[i])
+     i += 1
   end
-
+ary
 end
-
-# array = array.join(", ")
-# array = array.upcase
-# array = array.split(",").first
