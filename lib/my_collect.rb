@@ -1,10 +1,12 @@
 require 'pry'
-collect = []
+
 def my_collect(array)
     e = 0
+    collect = []
 
     while e < array.length
-      yield array[e]
+      collect << yield(array[e]) #after yield a no go
       e += 1
     end
+    collect
 end
