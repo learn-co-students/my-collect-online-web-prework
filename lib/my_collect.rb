@@ -1,7 +1,10 @@
- let ['Tim Jones', 'Tom Smith', 'Sophie Johnson'] do
- empty_array = []
-    counter = 0
-      my_collect(empty_array) do |x|
-        counter += 1
-      end
+def my_collect(collection)
+  i = 0 
+  array_collection = [] 
+  while i < collection.length
+  array_collection << yield(collection[i])
+  i += 1 
+end
+  array_collection
+end 
 
