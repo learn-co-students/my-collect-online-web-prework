@@ -1,5 +1,4 @@
 def my_collect(collection)
-    block_given?
     new_collection = []
     i = 0
     while i < collection.length
